@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--mdn grid buat documentasi nya-->
+<!--grid column u/ kolom pertama, dia memanjang sebanyak 4-->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Royal</title>
+    <link rel="stylesheet" href="style.css">
+<body>
+    <div class="calc-container">
+        <h1>Calculator type 1 : Using Grid</h1>
+        <div class="wrapper">
+            <input id="display1" type="text" name="display" class="input" readonly>
+            <button class="red" value="AC" onClick="btnClick(this.innerText)">AC</button>
+            <button class="blue" value="C" onClick="btnClick(this.innerText)">C</button>
+            <button class="yellow" value="*" onClick="btnClick(this.innerText)">*</button>
+            <button value="7" onClick="btnClick(this.innerText)">7</button>
+            <button value="8" onClick="btnClick(this.innerText)">8</button>
+            <button value="9" onClick="btnClick(this.innerText)">9</button>
+            <button class="yellow" value="/" onClick="btnClick(this.innerText)">/</button>
+            <button value="4" onClick="btnClick(this.innerText)">4</button>
+            <button value="5" onClick="btnClick(this.innerText)">5</button>
+            <button value="6" onClick="btnClick(this.innerText)">6</button>
+            <button class="yellow" value="+" onClick="btnClick(this.innerText)">+</button>
+            <button value="1" onClick="btnClick(this.innerText)">1</button>
+            <button value="2" onClick="btnClick(this.innerText)">2</button>
+            <button value="3" onClick="btnClick(this.innerText)">3</button>
+            <button class="yellow" value="-" onClick="btnClick(this.innerText)">-</button>
+            <button class="black" value="+-" onClick="btnClick(this.innerText)">+-</button>
+            <button value="0" onClick="btnClick(this.innerText)">0</button>
+            <button class="black" value="." onClick="btnClick(this.innerText)">.</button>
+            <button class="green" value="=" onClick="calculate()">=</button>
+        </div>
+    </div>
+
+    <div class="calc-container">
+    <h1>Calculator type 2: Using Table</h1>
+    <table>
+        <tr>
+            <th colspan="4"><input id="display2" type="text" name="display" class="input" readonly></th>
+        </tr>
+        <tr>
+            <td colspan="2"><button class="red" value="AC" onClick="buttonClick(this.innerText)">AC</button></td>
+            <td><button class="blue" value="C" onClick="buttonClick(this.innerText)">C</button></td>
+            <td><button class="yellow" value="*" onClick="buttonClick(this.innerText)">*</button></td>
+        </tr>
+        <tr>
+            <td><button value="7" onClick="buttonClick(this.innerText)">7</button></td>
+            <td><button value="8" onClick="buttonClick(this.innerText)">8</button></td>
+            <td><button value="9" onClick="buttonClick(this.innerText)">9</button></td>
+            <td><button class="yellow" value="/" onClick="buttonClick(this.innerText)">/</button></td>
+        </tr>
+        <tr>
+            <td><button value="4" onClick="buttonClick(this.innerText)">4</button></td>
+            <td><button value="5" onClick="buttonClick(this.innerText)">5</button></td>
+            <td><button value="6" onClick="buttonClick(this.innerText)">6</button></td>
+            <td><button class="yellow" value="+" onClick="buttonClick(this.innerText)">+</button></td>
+        </tr>
+        <tr>
+            <td><button value="1" onClick="buttonClick(this.innerText)">1</button></td>
+            <td><button value="2" onClick="buttonClick(this.innerText)">2</button></td>
+            <td><button value="3" onClick="buttonClick(this.innerText)">3</button></td>
+            <td><button class="yellow" value="-" onClick="buttonClick(this.innerText)">-</button></td>
+        </tr>
+        <tr>
+            <td><button class="black" value="+-" onClick="buttonClick(this.innerText)">+-</button></td>
+            <td><button value="0" onClick="buttonClick(this.innerText)">0</button></td>
+            <td><button class="black" value="." onClick="buttonClick(this.innerText)">.</button></td>
+            <td><button class="green" value="=" onClick="equalsTo()">=</button></td>
+        </tr>
+    </table> 
+    </div>
+
+   
+    <script src="index.js"></script>
+</body>
+</head>
+
+</html>
